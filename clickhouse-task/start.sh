@@ -20,8 +20,8 @@ docker exec -i clickhouse-kafka-server-1 /bin/bash -c "clickhouse-client -n < /d
 
 
 docker exec -i connect /bin/bash -c "kafka-console-producer --broker-list broker:29092 --topic readings <<END
-1,\"2020-05-16 23:55:44\",14.2
-2,\"2020-05-16 23:55:45\",20.1
-3,\"2020-05-16 23:55:51\",12.9
+1,\"2023-05-28 00:00:11\",19.2
+2,\"2023-05-28 00:00:22\",18.2
+3,\"2023-05-28 00:00:33\",15.2
 END"
 
