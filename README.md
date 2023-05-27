@@ -4,7 +4,11 @@ First tasks done with:
 
 To start containers use ./start.sh
 
-To read data on second MongoDB node use connection cmd: mongosh "mongodb://mongo2"
+Connect to mongoDB nodes:
+- docker exec -it mongo1 /bin/bash
+  mongosh "mongodb://mongo1"
+- docker exec -it mongo2 /bin/bash
+  mongosh "mongodb://mongo2"
 
 Data enter example: db.users.insertOne({ firstname: "abc", lastname: "bcd", age: 15, email: "bvb@gmail.com" })
 
@@ -23,3 +27,7 @@ To see DB changes after posting data connect with: docker exec -it clickhouse-ka
 To dismantle containers use cmd for respective containers:
 - docker-compose -p mongo-kafka down   
 - docker-compose -p clickhouse-kafka down   
+
+To remove all installed images:
+- docker-compose -p mongo-kafka down --rmi all
+- docker-compose -p clickhouse-kafka down --rmi all
