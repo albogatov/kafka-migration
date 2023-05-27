@@ -8,11 +8,6 @@ RUN mkdir /scratch_space/src
 RUN mkdir /scratch_space/dst
 COPY sourceTopic.json /scratch_space/src
 COPY destinationTopic.json /scratch_space/dst
-ADD change_streams /tutorials/change_streams
-ADD source_connector /tutorials/source_connector
-ADD sink_connector /tutorials/sink_connector
-ADD cdc_handler /tutorials/cdc_handler
-ADD time_series /tutorials/time_series
 ADD utils /usr/local/bin
 RUN chmod +x /usr/local/bin/cx
 RUN chmod +x /usr/local/bin/del

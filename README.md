@@ -19,3 +19,7 @@ Third task done with:
 
 To start containers and initiate DB use ./start.sh
 To see DB changes after posting data connect with: docker exec -it clickhouse-kafka-server-1 clickhouse-client
+
+To dismantle containers use cmd for respective containers:
+- docker-compose -p mongo-kafka down   
+- docker-compose -p clickhouse-kafka down   
