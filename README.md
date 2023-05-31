@@ -6,8 +6,10 @@ To start containers use ./start.sh
 
 Connect to mongoDB nodes:
 - docker exec -it mongo1 /bin/bash
+  
   mongosh "mongodb://mongo1"
 - docker exec -it mongo2 /bin/bash
+  
   mongosh "mongodb://mongo2"
 
 Data enter example: db.users.insertOne({ firstname: "abc", lastname: "bcd", age: 15, email: "bvb@gmail.com" })
