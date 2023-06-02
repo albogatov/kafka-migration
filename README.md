@@ -15,7 +15,7 @@ Connect to mongoDB nodes:
 Data enter example: db.users.insertOne({ firstname: "abc", lastname: "bcd", age: 15, email: "bvb@gmail.com" })
 
 Second task done with
-- sourceTopic improved by adding a schema, no additional module was used
+- sourceTopic improved by adding a schema parameter, no additional module or schema registry was used as it is unnecessary for one-way migration
 
 Data enter example for task two:
 - db.users.insertOne({ firstname: "abc", lastname: "bcd", age: 15, email: "bvb@gmail.com", sex: "M" })
