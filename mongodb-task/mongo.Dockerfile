@@ -1,6 +1,5 @@
 FROM mongo:6.0.5
 
-COPY config-replica.js /
 COPY .bashrc /data/db/.bashrc
 COPY requirements.txt /
 RUN mkdir /scratch_space
