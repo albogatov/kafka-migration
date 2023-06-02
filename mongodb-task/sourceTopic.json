@@ -7,7 +7,7 @@
     "collection": "users",
     "output.format.value": "schema",
     "publish.full.document.only": "true",
-    "output.schema.value": "{ \"type\": \"record\", \"name\": \"User\", \"fields\": [ { \"name\": \"id\", \"type\": [\"null\", \"string\"]},{ \"name\": \"firstname\", \"type\": \"string\" }, { \"name\": \"lastname\", \"type\": \"string\" }, { \"name\": \"age\", \"type\": \"long\" }, { \"name\": \"email\", \"type\": \"string\" }, { \"name\": \"sex\", \"type\": [\"null\", \"string\"] } ] }",
+    "output.schema.value": "{ \"type\": \"record\", \"name\": \"User\", \"fields\": [ { \"name\": \"_id\", \"type\": \"string\" },{ \"name\": \"firstname\", \"type\": \"string\" }, { \"name\": \"lastname\", \"type\": \"string\" }, { \"name\": \"age\", \"type\": \"long\" }, { \"name\": \"email\", \"type\": \"string\" }, { \"name\": \"sex\", \"type\": [\"null\", \"string\"] } ] }",
     "value.converter.schemas.enable": "true",
     "value.converter": "org.apache.kafka.connect.json.JsonConverter",
     "key.converter": "org.apache.kafka.connect.storage.StringConverter"
